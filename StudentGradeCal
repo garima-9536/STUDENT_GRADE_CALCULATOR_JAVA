@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class Student {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Input your subject marks out of 100: ");
+        int n1 = sc.nextInt();
+        int n2 = sc.nextInt();
+        int n3 = sc.nextInt();
+        int n4 = sc.nextInt();
+        int n5 = sc.nextInt();
+        int sum = n1 + n2 + n3 + n4 + n5;
+        System.out.println(" TOTAL SCORE " + sum);
+        double avg=(sum/500.0)*100;
+        System.out.println(" AVERAGE PERCENTAGE: " + avg);
+        if(avg>90.0){
+            System.out.println(" A GRADE");
+        }
+        else if (avg>80.0) {
+            System.out.println(" B GRADE");
+        }
+        else if(avg>70.0){
+            System.out.println(" C GRADE");
+        }
+        else if( avg>60.0){
+            System.out.println(" D GRADE");
+        }
+        else if( avg>50.0){
+            System.out.println("E GRADE");
+        }
+        else{
+            System.out.println("NEED TO PERFORM BETTER");
+        }
+
+
+    }
+
+}
+
+
